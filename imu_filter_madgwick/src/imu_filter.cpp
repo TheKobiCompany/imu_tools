@@ -310,7 +310,6 @@ void ImuFilter::madgwickAHRSupdateIMU(
   normalizeQuaternion (q0, q1, q2, q3);
 }
 
-
 void ImuFilter::getGravity(float& rx, float& ry, float& rz,
     float gravity)
 {

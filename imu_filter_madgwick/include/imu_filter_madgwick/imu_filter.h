@@ -57,6 +57,13 @@ public:
         zeta_ = zeta;
     }
 
+    void setGyroBias(float bias_x, float bias_y, float bias_z)
+    {
+        w_bx_ = bias_x;
+        w_by_ = bias_y;
+        w_bz_ = bias_z;
+    }
+
     void setWorldFrame(WorldFrame::WorldFrame frame)
     {
         world_frame_ = frame;
