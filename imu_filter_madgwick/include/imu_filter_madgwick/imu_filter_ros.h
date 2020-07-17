@@ -38,6 +38,8 @@
 #include "imu_filter_madgwick/imu_filter.h"
 #include "imu_filter_madgwick/ImuFilterMadgwickConfig.h"
 
+namespace imu_filter_madgwick {
+
 class ImuFilterRos
 {
   typedef sensor_msgs::Imu              ImuMsg;
@@ -112,5 +114,7 @@ class ImuFilterRos
     void reconfigCallback(FilterConfig& config, uint32_t level);
     void checkTopicsTimerCallback(const ros::TimerEvent&);
 };
+
+} // imu_filter_madgwick
 
 #endif // IMU_FILTER_IMU_MADWICK_FILTER_ROS_H

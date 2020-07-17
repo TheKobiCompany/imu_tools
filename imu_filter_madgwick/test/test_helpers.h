@@ -7,6 +7,8 @@
 
 #define MAX_DIFF 0.05
 
+namespace imu_filter_madgwick {
+
 template <typename T>
 static inline void normalize_quaternion(T& q0, T& q1, T& q2, T& q3) {
   T invNorm = 1 / sqrt(q0*q0 + q1*q1 + q2*q2 + q3*q3);
@@ -100,3 +102,6 @@ static inline bool quat_eq_ex_z(T q0, T q1, T q2, T q3, T qr0, T qr1, T qr2, T q
 
 
 #endif /* TEST_TEST_HELPERS_H_ */
+
+
+} // imu_filter_madgwick

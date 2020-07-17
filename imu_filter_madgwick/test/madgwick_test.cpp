@@ -4,6 +4,7 @@
 
 #define FILTER_ITERATIONS 10000
 
+namespace imu_filter_madgwick {
 
 template <WorldFrame::WorldFrame FRAME>
 void filterStationary(
@@ -114,6 +115,7 @@ TEST(MadgwickTest, TestQuatEqNoZ) {
 }
 
 
+} // imu_filter_madgwick
 
 int main(int argc, char **argv){
   testing::InitGoogleTest(&argc, argv);

@@ -1,6 +1,7 @@
 #include <imu_filter_madgwick/stateless_orientation.h>
 #include "test_helpers.h"
 
+namespace imu_filter_madgwick {
 
 template<WorldFrame::WorldFrame FRAME>
 bool computeOrientation(
@@ -114,4 +115,4 @@ TEST(StatelessOrientationTest, Check_NoMag){
     q0, q1, q2, q3));
 }
 
-
+} // imu_filter_madgwick

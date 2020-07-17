@@ -29,6 +29,8 @@
 
 #include "imu_filter_madgwick/imu_filter_ros.h"
 
+namespace imu_filter_madgwick {
+
 class ImuFilterNodelet : public nodelet::Nodelet
 {
   public:
@@ -38,4 +40,5 @@ class ImuFilterNodelet : public nodelet::Nodelet
     boost::shared_ptr<ImuFilterRos> filter_;
 };
 
+} // imu_filter_madgwick
 #endif // IMU_FILTER_MADGWICK_IMU_FILTER_NODELET_H

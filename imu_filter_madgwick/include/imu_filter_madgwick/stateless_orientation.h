@@ -29,6 +29,8 @@
 #include <geometry_msgs/Quaternion.h>
 #include <imu_filter_madgwick/world_frame.h>
 
+namespace imu_filter_madgwick {
+
 class StatelessOrientation
 {
 public:
@@ -45,4 +47,5 @@ public:
 
 };
 
+} // imu_filter_madgwick
 #endif // IMU_FILTER_MADWICK_STATELESS_ORIENTATION_H

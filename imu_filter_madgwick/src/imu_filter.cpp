@@ -160,6 +160,7 @@ static inline void compensateMagneticDistortion(
 
 }
 
+namespace imu_filter_madgwick {
 
 ImuFilter::ImuFilter() :
     q0(1.0), q1(0.0), q2(0.0), q3(0.0),
@@ -337,3 +338,5 @@ void ImuFilter::getGravity(float& rx, float& ry, float& rz,
         break;
     }
 }
+
+} // imu_filter_madgwick

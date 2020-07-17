@@ -28,6 +28,7 @@
 #include <tf2/LinearMath/Quaternion.h>
 #include <tf2/LinearMath/Matrix3x3.h>
 
+namespace imu_filter_madgwick {
 ImuFilterRos::ImuFilterRos(ros::NodeHandle nh, ros::NodeHandle nh_private):
   nh_(nh),
   nh_private_(nh_private),
@@ -391,3 +392,4 @@ void ImuFilterRos::checkTopicsTimerCallback(const ros::TimerEvent&)
   else
     ROS_WARN_STREAM("Still waiting for data on topic " << ros::names::resolve("imu") << "/data_raw" << "...");
 }
+} // imu_filter_madgwick

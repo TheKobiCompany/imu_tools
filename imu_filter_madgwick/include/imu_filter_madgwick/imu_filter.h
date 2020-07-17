@@ -29,6 +29,8 @@
 #include <iostream>
 #include <cmath>
 
+namespace imu_filter_madgwick {
+
 class ImuFilter
 {
   public:
@@ -103,5 +105,7 @@ public:
     void getGravity(float& rx, float& ry, float& rz,
                     float gravity = 9.80665);
 };
+
+} // imu_filter_madgwick
 
 #endif // IMU_FILTER_IMU_MADWICK_FILTER_H

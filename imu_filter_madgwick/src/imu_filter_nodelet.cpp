@@ -25,15 +25,16 @@
 #include "imu_filter_madgwick/imu_filter_nodelet.h"
 #include <pluginlib/class_list_macros.h>
 
+namespace imu_filter_madgwick {
 void ImuFilterNodelet::onInit()
 {
   NODELET_INFO("Initializing IMU Filter Nodelet");
-  
+
   // TODO: Do we want the single threaded or multithreaded NH?
   ros::NodeHandle nh         = getMTNodeHandle();
   ros::NodeHandle nh_private = getMTPrivateNodeHandle();
 
   filter_.reset(new ImuFilterRos(nh, nh_private));
 }
-
-PLUGINLIB_EXPORT_CLASS(ImuFilterNodelet, nodelet::Nodelet)
+} // imu_filter_madgwick
+PLUGINLIB_EXPORT_CLASS(imu_filter_madgwick::ImuFilterNodelet, nodelet::Nodelet)

@@ -49,6 +49,7 @@ static inline T normalizeVector(T& vx, T& vy, T& vz) {
 
 }
 
+namespace imu_filter_madgwick {
 
 bool StatelessOrientation::computeOrientation(
   WorldFrame::WorldFrame frame,
@@ -170,3 +171,5 @@ bool StatelessOrientation::computeOrientation(
 
   return computeOrientation(frame, A, E, orientation);
 }
+
+} // imu_filter_madgwick
