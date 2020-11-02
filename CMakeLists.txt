@@ -6,7 +6,7 @@ find_package(catkin REQUIRED COMPONENTS geometry_msgs tf2_geometry_msgs)
 catkin_package(
   CATKIN_DEPENDS geometry_msgs tf2_geometry_msgs
   INCLUDE_DIRS
-  LIBRARIES imu_filter imu_filter_nodelet
+  LIBRARIES imu_filter
 )
 
 include_directories(
