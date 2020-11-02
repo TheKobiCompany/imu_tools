@@ -18,7 +18,6 @@
   <build_depend>tf2</build_depend>
   <build_depend>tf2_geometry_msgs</build_depend>
   <build_depend>tf2_ros</build_depend>
-  <build_depend>pluginlib</build_depend>
   <build_depend>message_filters</build_depend>
   <build_depend>dynamic_reconfigure</build_depend>
 
@@ -28,7 +27,6 @@
   <run_depend>tf2</run_depend>
   <run_depend>tf2_geometry_msgs</run_depend>
   <run_depend>tf2_ros</run_depend>
-  <run_depend>pluginlib</run_depend>
   <run_depend>message_filters</run_depend>
   <run_depend>dynamic_reconfigure</run_depend>
 
