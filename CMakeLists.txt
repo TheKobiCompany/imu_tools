@@ -1,18 +1,21 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(imu_filter_madgwick)
 
-find_package(catkin REQUIRED COMPONENTS geometry_msgs tf2_geometry_msgs)
+find_package(catkin REQUIRED COMPONENTS geometry_msgs)
+find_package(Eigen3 REQUIRED)
 
 catkin_package(
-  CATKIN_DEPENDS geometry_msgs tf2_geometry_msgs
+  CATKIN_DEPENDS geometry_msgs
   INCLUDE_DIRS
   LIBRARIES imu_filter
+  DEPENDS Eigen3
 )
 
 include_directories(
   include
   ${catkin_INCLUDE_DIRS}
   ${Boost_INCLUDE_DIRS}
+  ${EIGEN3_INCLUDE_DIRS}
 )
 
 
