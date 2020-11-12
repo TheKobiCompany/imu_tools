@@ -33,14 +33,3 @@ install(DIRECTORY include/${PROJECT_NAME}/
    DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
    FILES_MATCHING PATTERN "*.h"
 )
-
-if(CATKIN_ENABLE_TESTING)
-  catkin_add_gtest(${PROJECT_NAME}-madgwick_test
-    test/stateless_orientation_test.cpp
-    test/madgwick_test.cpp
-  )
-  target_link_libraries(${PROJECT_NAME}-madgwick_test
-    imu_filter
-    ${catkin_LIBRARIES}
-  )
-endif()
